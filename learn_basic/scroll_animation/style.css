@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: auto;
+    background: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+#main__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+.box.show {
+    transform: translateX(0);
+}
+.box:nth-of-type(even) {
+    transform: translateX(-200%);
+}
+.box {
+    background-color: #24a3af;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px #000;
+    transition: transform 0.8s ease;
+    transform: translateX(200%);
+}

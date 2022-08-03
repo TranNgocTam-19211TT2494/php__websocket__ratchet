@@ -52,6 +52,7 @@
                     </div>
                 `;
                 $('#msger-chat').html(msgHTML);
+                $("#msger-chat").animate({ scrollTop: $('#msger-chat')[0].scrollHeight}, 1000);
                 $('#message').val('');
             });
 
@@ -73,6 +74,7 @@
                     </div>
                 `;
                 $('#msger-chat').html(msgHTML);
+                $("#msger-chat").animate({ scrollTop: $('#msger-chat')[0].scrollHeight}, 1000);
                 $('#message').val('');
             }
         });

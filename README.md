@@ -5,7 +5,7 @@ This is a PHP chat sample using Ratchet project and JS Websocket.
 * lib ratchet php
 
 ```shell
-composer i ratchet
+composer require cboden/ratchet
 ```
 
 * Start the Server
